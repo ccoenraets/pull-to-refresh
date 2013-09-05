@@ -1,0 +1,69 @@
+.list {
+    border-top: none;
+}
+
+.scrollable {
+	overflow-y: auto;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 71px;
+}
+
+
+.scrollable .wrap {
+	min-height: 100%;
+	padding-bottom: 1px;
+	-webkit-transform: translateZ(0);
+}
+
+.pull-to-refresh {
+	line-height: 50px;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -50px;
+	z-index: -1;
+}
+
+.pull-to-refresh >.message {
+	height: 50px;
+	width: 100%;
+	overflow-y: auto;
+	position: relative;
+}
+
+.pull-to-refresh >.message >i.arrow {
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	display: inline-block;
+	margin-left: 10px;
+	background-position: center center;
+}
+
+.pull-to-refresh >.message >i.arrow {
+	width: 20px;
+	height: 50px;
+	background-image: url('../topcoat/img/arrow_up.svg');
+}
+
+.pull-to-refresh >.message > div.spinner {
+    margin-left: 12px;
+}
+
+.pull-to-refresh >.message >span.pull,
+.pull-to-refresh >.message >span.release,
+.pull-to-refresh >.message >span.loading {
+	text-align: center;
+	display: block;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
